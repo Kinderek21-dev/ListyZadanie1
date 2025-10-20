@@ -8,4 +8,5 @@ struct Element {
 
 
     Element(int w) : wartosc(w), nast(nullptr), poprz(nullptr) {}
+
 };
