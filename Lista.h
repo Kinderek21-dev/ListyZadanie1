@@ -16,4 +16,6 @@ public:
     void dodajNaKoniec(int wartosc);
     void dodajNaIndeks(int wartosc, int indeks);
 
+    void usunZPoczatku();
+    void usunZKonca();
 };

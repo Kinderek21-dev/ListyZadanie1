@@ -53,3 +53,23 @@ void Lista::dodajNaIndeks(int wartosc, int indeks) {
     temp->nast = nowy;
     rozmiar++;
 }
+
+void Lista::usunZPoczatku() {
+    if (!glowa) return;
+    Element* temp = glowa;
+    glowa = glowa->nast;
+    if (glowa) glowa->poprz = nullptr;
+    else ogon = nullptr;
+    delete temp;
+    rozmiar--;
+}
+
+void Lista::usunZKonca() {
+    if (!ogon) return;
+    Element* temp = ogon;
+    ogon = ogon->poprz;
+    if (ogon) ogon->nast = nullptr;
+    else glowa = nullptr;
+    delete temp;
+    rozmiar--;
+}
