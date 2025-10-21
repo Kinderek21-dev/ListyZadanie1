@@ -18,4 +18,5 @@ public:
 
     void usunZPoczatku();
     void usunZKonca();
+    void pokaz();
 };

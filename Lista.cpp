@@ -73,3 +73,13 @@ void Lista::usunZKonca() {
     delete temp;
     rozmiar--;
 }
+
+void Lista::pokaz() {
+    Element* temp = glowa;
+    cout << "Lista: ";
+    while (temp) {
+        cout << temp->wartosc << " ";
+        temp = temp->nast;
+    }
+    cout << endl;
+}
