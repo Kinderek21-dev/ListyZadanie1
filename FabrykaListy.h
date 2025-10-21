@@ -1,5 +1,8 @@
-#include "FabrykaListy.h"
+#pragma once
+#include "Lista.h"
+using namespace std;
 
-Lista* FabrykaListy::stworzListe() {
-    return new Lista();
-}
+class FabrykaListy {
+public:
+    static Lista* stworzListe();
+};

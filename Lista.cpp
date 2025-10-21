@@ -9,7 +9,7 @@ Lista::Lista() {
 }
 
 Lista::~Lista() {
-    czysc();
+   
 }
 
 void Lista::dodajNaPoczatek(int wartosc) {
