@@ -1,11 +1,12 @@
 #pragma once
 #include "Element.h"
+#include <iostream>
 using namespace std;
 
 class Lista {
 private:
-    Element* glowa;
-    Element* ogon;
+    Element* a;
+    Element* b;
     int rozmiar;
 
 public:
@@ -18,5 +19,11 @@ public:
 
     void usunZPoczatku();
     void usunZKonca();
+    void usunZIndeksu(int indeks);
+
     void pokaz();
+    void pokazOdwrotnie();
+    void czysc();
+
+    int size() const;
 };

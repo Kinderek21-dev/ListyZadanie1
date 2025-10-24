@@ -3,19 +3,32 @@
 using namespace std;
 
 int main() {
-    Lista* lista = FabrykaListy::stworzListe();
 
+    Lista* lista = FabrykaListy::stworzListe();
     lista->dodajNaKoniec(10);
     lista->dodajNaKoniec(20);
     lista->dodajNaKoniec(30);
     lista->pokaz();
     lista->dodajNaPoczatek(5);
     lista->pokaz();
+
     lista->dodajNaIndeks(15, 2);
     lista->pokaz();
+
     lista->usunZPoczatku();
     lista->pokaz();
+
     lista->usunZKonca();
+    lista->pokaz();
+    lista->dodajNaKoniec(40);
+    lista->dodajNaKoniec(50);
+    lista->pokaz();
+    lista->usunZIndeksu(1); 
+    lista->pokaz();
+
+    lista->pokazOdwrotnie();
+
+    lista->czysc();
     lista->pokaz();
 
     delete lista;
