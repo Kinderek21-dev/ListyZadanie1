@@ -101,7 +101,7 @@ void Lista::pokaz() {
 
 void Lista::pokazOdwrotnie() {
     Element* temp = b;
-    cout << "Lista od koñca: ";
+    cout << "Lista od konca: ";
     while (temp) {
         cout << temp->wartosc << " ";
         temp = temp->poprz;
