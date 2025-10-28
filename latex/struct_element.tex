@@ -1,0 +1,60 @@
+\doxysection{Element Struct Reference}
+\hypertarget{struct_element}{}\label{struct_element}\index{Element@{Element}}
+
+
+Reprezentuje pojedynczy wezel listy dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$Element.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_element_a7d414e2cd130300d9d85c21aaa9b91b4}{Element}} (int w)
+\begin{DoxyCompactList}\small\item\em Konstruktor inicjalizujacy wartosc i ustawia wskazniki na null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_element_a6293e5d8101312d7e3bb95688dc7b261}\label{struct_element_a6293e5d8101312d7e3bb95688dc7b261} 
+int {\bfseries wartosc}
+\begin{DoxyCompactList}\small\item\em Wartosc przechowywana w elemencie. \end{DoxyCompactList}\item 
+\Hypertarget{struct_element_a2bc4bd7b6effe1bf6796129b9d1665fe}\label{struct_element_a2bc4bd7b6effe1bf6796129b9d1665fe} 
+\mbox{\hyperlink{struct_element}{Element}} \texorpdfstring{$\ast$}{*} {\bfseries nast}
+\begin{DoxyCompactList}\small\item\em Wskaznik na nastepny element (nullptr jesli brak). \end{DoxyCompactList}\item 
+\Hypertarget{struct_element_a1e1e1a7f5b16546df41147cd7498398e}\label{struct_element_a1e1e1a7f5b16546df41147cd7498398e} 
+\mbox{\hyperlink{struct_element}{Element}} \texorpdfstring{$\ast$}{*} {\bfseries poprz}
+\begin{DoxyCompactList}\small\item\em Wskaznik na poprzedni element (nullptr jesli brak). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentuje pojedynczy wezel listy dwukierunkowej. 
+
+Struktura zawiera prosta wartosc typu calkowitego oraz dwa wskazniki\+: nast — wskaznik na nastepny element w liscie, poprz — wskaznik na poprzedni element w liscie.
+
+Wezel alokowany jest dynamicznie w metodach klasy \doxylink{class_lista}{Lista}. Po usunieciu elementu pamiec musi zostac zwolniona przez operator delete. 
+
+\label{doc-constructors}
+\Hypertarget{struct_element_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_element_a7d414e2cd130300d9d85c21aaa9b91b4}\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}}
+{\footnotesize\ttfamily \label{struct_element_a7d414e2cd130300d9d85c21aaa9b91b4} 
+Element\+::\+Element (\begin{DoxyParamCaption}\item[{int}]{w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruktor inicjalizujacy wartosc i ustawia wskazniki na null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Wartosc, ktora ma byc przechowana w elemencie.\\
+\hline
+\end{DoxyParams}
+Konstruktor upraszcza tworzenie nowego wezla ustawia pola wskaznikowe na nullptr, dzieki czemu nowy element jest gotowy do wstawienia do listy. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_element_8h}{Element.\+h}}\end{DoxyCompactItemize}

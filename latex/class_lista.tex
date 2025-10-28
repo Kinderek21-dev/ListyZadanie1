@@ -1,0 +1,124 @@
+\doxysection{Lista Class Reference}
+\hypertarget{class_lista}{}\label{class_lista}\index{Lista@{Lista}}
+
+
+Prosta implementacja listy dwukierunkowej.  
+
+
+
+
+{\ttfamily \#include $<$Lista.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_lista_a1f668b36909182ef1360b48503529a31}\label{class_lista_a1f668b36909182ef1360b48503529a31} 
+{\bfseries Lista} ()
+\begin{DoxyCompactList}\small\item\em Konstruktor — tworzy pusta liste. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_a4d7394b2728a00ad8404965b2e15d096}\label{class_lista_a4d7394b2728a00ad8404965b2e15d096} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Lista} ()
+\begin{DoxyCompactList}\small\item\em Destruktor — czysci liste. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_a51ae93114267edbcd7c3e89e8b4c3a4a}{dodaj\+Na\+Poczatek}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje element na poczatek listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_a07ff9aeab5c5528c5bbd5f1e3358e382}{dodaj\+Na\+Koniec}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Dodaje element na koniec listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_a68cb68d3696f8053356f4caa2b8e79ed}{dodaj\+Na\+Indeks}} (int wartosc, int indeks)
+\begin{DoxyCompactList}\small\item\em Wstawia element pod dany indeks (0 = poczatek). \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_a2a8afdc95cd0aa61504fdff5f6497c60}\label{class_lista_a2a8afdc95cd0aa61504fdff5f6497c60} 
+void {\bfseries usun\+ZPoczatku} ()
+\begin{DoxyCompactList}\small\item\em Usuwa element z poczatku listy. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_a42afdc99cccf25c3a1000da5cd49ec54}\label{class_lista_a42afdc99cccf25c3a1000da5cd49ec54} 
+void {\bfseries usun\+ZKonca} ()
+\begin{DoxyCompactList}\small\item\em Usuwa element z konca listy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_a9e62adac2150be3f55100650abeed8a1}{usun\+ZIndeksu}} (int indeks)
+\begin{DoxyCompactList}\small\item\em Usuwa element pod wskazanym indeksem. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_afd46205770d9b8014f29546dd7e6e903}\label{class_lista_afd46205770d9b8014f29546dd7e6e903} 
+void {\bfseries pokaz} ()
+\begin{DoxyCompactList}\small\item\em Wypisuje liste od poczatku do konca. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_af905710a249e05c66702846881f35d19}\label{class_lista_af905710a249e05c66702846881f35d19} 
+void {\bfseries pokaz\+Odwrotnie} ()
+\begin{DoxyCompactList}\small\item\em Wypisuje liste od konca do poczatku. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_a74d0b42fb3896e19f0bd287ba93c13b5}\label{class_lista_a74d0b42fb3896e19f0bd287ba93c13b5} 
+void {\bfseries czysc} ()
+\begin{DoxyCompactList}\small\item\em Czysci liste. \end{DoxyCompactList}\item 
+\Hypertarget{class_lista_a7caec44e99cddd6682dd163dba2c9541}\label{class_lista_a7caec44e99cddd6682dd163dba2c9541} 
+int {\bfseries size} () const
+\begin{DoxyCompactList}\small\item\em Zwraca liczbe elementow na liscie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Prosta implementacja listy dwukierunkowej. 
+
+{\ttfamily a} wskazuje na pierwszy element listy, {\ttfamily b} wskazuje na ostatni element listy. 
+
+\label{doc-func-members}
+\Hypertarget{class_lista_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lista_a68cb68d3696f8053356f4caa2b8e79ed}\index{Lista@{Lista}!dodajNaIndeks@{dodajNaIndeks}}
+\index{dodajNaIndeks@{dodajNaIndeks}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{dodajNaIndeks()}{dodajNaIndeks()}}
+{\footnotesize\ttfamily \label{class_lista_a68cb68d3696f8053356f4caa2b8e79ed} 
+void Lista\+::dodaj\+Na\+Indeks (\begin{DoxyParamCaption}\item[{int}]{wartosc}{, }\item[{int}]{indeks}{}\end{DoxyParamCaption})}
+
+
+
+Wstawia element pod dany indeks (0 = poczatek). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & wartosc do wstawienia \\
+\hline
+{\em indeks} & indeks docelowy\\
+\hline
+\end{DoxyParams}
+Jesli indeks \texorpdfstring{$<$}{<}= 0 -\/\texorpdfstring{$>$}{>} wstawia na poczatek. Jesli indeks \texorpdfstring{$>$}{>}= rozmiar -\/\texorpdfstring{$>$}{>} wstawia na koniec. \Hypertarget{class_lista_a07ff9aeab5c5528c5bbd5f1e3358e382}\index{Lista@{Lista}!dodajNaKoniec@{dodajNaKoniec}}
+\index{dodajNaKoniec@{dodajNaKoniec}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{dodajNaKoniec()}{dodajNaKoniec()}}
+{\footnotesize\ttfamily \label{class_lista_a07ff9aeab5c5528c5bbd5f1e3358e382} 
+void Lista\+::dodaj\+Na\+Koniec (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje element na koniec listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & wartosc do dodania \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_lista_a51ae93114267edbcd7c3e89e8b4c3a4a}\index{Lista@{Lista}!dodajNaPoczatek@{dodajNaPoczatek}}
+\index{dodajNaPoczatek@{dodajNaPoczatek}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{dodajNaPoczatek()}{dodajNaPoczatek()}}
+{\footnotesize\ttfamily \label{class_lista_a51ae93114267edbcd7c3e89e8b4c3a4a} 
+void Lista\+::dodaj\+Na\+Poczatek (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})}
+
+
+
+Dodaje element na poczatek listy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & wartosc do dodania \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_lista_a9e62adac2150be3f55100650abeed8a1}\index{Lista@{Lista}!usunZIndeksu@{usunZIndeksu}}
+\index{usunZIndeksu@{usunZIndeksu}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{usunZIndeksu()}{usunZIndeksu()}}
+{\footnotesize\ttfamily \label{class_lista_a9e62adac2150be3f55100650abeed8a1} 
+void Lista\+::usun\+ZIndeksu (\begin{DoxyParamCaption}\item[{int}]{indeks}{}\end{DoxyParamCaption})}
+
+
+
+Usuwa element pod wskazanym indeksem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indeks} & indeks do usuniecia \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_lista_8h}{Lista.\+h}}\item 
+\mbox{\hyperlink{_lista_8cpp}{Lista.\+cpp}}\end{DoxyCompactItemize}
